@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SportsHub — Sports & Fitness Club</title>
+
+  <!-- INTERNAL CSS (HTML + CSS combined) -->
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+    body{background:#f7f7f7;color:#222;line-height:1.6;}
+
+    /* Header */
+    .site-header{background:#0a3d62;color:#fff;padding:15px 0;position:sticky;top:0;z-index:100;}
+    .container{width:90%;max-width:1100px;margin:auto;}
+    .header-inner{display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:28px;color:#fff;text-decoration:none;font-weight:700;}
+    nav ul{display:flex;gap:20px;list-style:none;}
+    nav ul li a{color:#fff;text-decoration:none;font-size:16px;font-weight:bold;}
+    nav ul li a:hover{text-decoration:underline;}
+
+    /* Hero */
+    .hero{padding:80px 0;text-align:center;background:#1e3799;color:white;}
+    .hero .btn{background:#0c2461;color:#fff;text-decoration:none;padding:12px 25px;border-radius:6px;margin:5px;display:inline-block;}
+    .hero .btn.outline{background:transparent;border:2px solid #fff;}
+
+    /* Sections */
+    .section{padding:60px 0;background:#fff;margin:40px 0;border-radius:10px;}
+    h2{text-align:center;margin-bottom:20px;font-size:28px;}
+
+    /* Cards */
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+    .card{background:#f0f0f0;padding:20px;border-radius:10px;text-align:center;font-size:17px;}
+
+    /* Trainers */
+    .trainer-list{list-style:none;padding:0;margin-top:20px;}
+    .trainer{background:#f0f0f0;padding:15px;margin:10px 0;border-radius:8px;}
+
+    /* Forms */
+    form{background:#fafafa;padding:20px;border-radius:10px;margin-top:20px;}
+    .form-row{margin-bottom:15px;}
+    label{font-weight:bold;}
+    input,textarea,select{width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:5px;}
+    .btn{background:#0a3d62;color:#fff;padding:10px 20px;border:none;border-radius:6px;cursor:pointer;}
+    .btn:hover{opacity:0.9;}
+
+    /* Footer */
+    .site-footer{background:#0a3d62;color:white;text-align:center;padding:20px 0;margin-top:40px;}
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">SportsHub</a>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#signup">Signup</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to SportsHub</h1>
+      <p>Join Sports & Fitness Club — Activities, Coaching, Training & More.</p>
+      <a class="btn" href="#signup">Join Now</a>
+      <a class="btn outline" href="#activities">See Activities</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>SportsHub ek community-based Sports & Fitness Club hai jaha professional training aur multiple activities available hain.</p>
+    </div>
+  </section>
+
+  <!-- ACTIVITIES -->
+  <section id="activities" class="section">
+    <div class="container">
+      <h2>Activities</h2>
+      <div class="cards">
+        <div class="card"><h3>Football</h3><p>Training & Matches</p></div>
+        <div class="card"><h3>Basketball</h3><p>Coaching & Drills</p></div>
+        <div class="card"><h3>Gym</h3><p>Strength & Fitness</p></div>
+        <div class="card"><h3>Yoga</h3><p>Flexibility & Relaxation</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="section">
+    <div class="container">
+      <h2>Our Trainers</h2>
+      <ul class="trainer-list">
+        <li class="trainer"><strong>Rahul Kumar:</strong> Football Coach</li>
+        <li class="trainer"><strong>Anita Singh:</strong> Fitness Trainer</li>
+        <li class="trainer"><strong>Sanjay Verma:</strong> Basketball Coach</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+
+      <form>
+        <div class="form-row">
+          <label>Name</label>
+          <input type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label>Message</label>
+          <textarea rows="4" required></textarea>
+        </div>
+
+        <button class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- LOGIN -->
+  <section id="login" class="section">
+    <div class="container">
+      <h2>Login</h2>
+
+      <form>
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" required />
+        </div>
+
+        <button class="btn">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section id="signup" class="section">
+    <div class="container">
+      <h2>Signup</h2>
+
+      <form>
+        <div class="form-row">
+          <label>Full Name</label>
+          <input type="text" required />
+        </div>
+
+        <div class="form-row">
+          <label>Email</label>
+          <input type="email" required />
+        </div>
+
+        <div class="form-row">
+          <label>Phone</label>
+          <input type="tel" required />
+        </div>
+
+        <div class="form-row">
+          <label>Password</label>
+          <input type="password" required />
+        </div>
+
+        <button class="btn">Create Account</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 SportsHub. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> ddddddd
+
+</body>
+</html>
